@@ -1,14 +1,20 @@
 /* reset default styles */
 
-
-
 header {
+  font-family: "Oswald";
 
+  display: flex;
+
+  /* background-color: red; */
+  height: 100px;
+  justify-content: center;
 }
 
-body {
+/* .pageHeader{
+  height: 100px;
+} */
 
-}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -16,14 +22,20 @@ ul {
 
 /* cards container */
 .charContainer {
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 /* character card container */
 .charCard {
-  background-color:white;
+  background-color: white;
   border: 1px solid rgb(0, 0, 0);
-  margin: 5px;
+  /* margin: 5px; */
+  width: auto;
+  text-align: center;
+  font-size: 120%;
 }
 
 /* character card header */
@@ -37,13 +49,18 @@ ul {
   width: 100%;
 }
 
-
 .charHeadContainer h2 {
   margin-bottom: 0;
 }
 
-.charHeadContainer .favIcon {
-
+.charName {
+  /* background-color: blue; */
+  margin-left: 20%;
+}
+.favIcon {
+  /* background-color: red;  */
+  margin-right: 10%;
+  display: flex;
 }
 
 /* character additional details - films */
@@ -60,19 +77,16 @@ ul {
   margin-left: 0.5rem;
 }
 
-.charDetailsList{
-
+.charDetailsList {
+  font-family: "Cabin";
 }
 
-.charDetailsList li{ 
-  margin:5px;
+.charDetailsList li {
+  margin: 5px;
 }
 
-.primaryButton{
-
+.primaryButton {
 }
 
-.secondaryButton{
-
+.secondaryButton {
 }
-
