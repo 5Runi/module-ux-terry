@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import CharacterCard from './CharacterCard.tsx';
+import styles from './stylesheets/modules/Character.scss';
+
 
 class Characters extends  Component {
   constructor(props) {
@@ -58,7 +60,7 @@ class Characters extends  Component {
         <header className="pageHeader">
           <h2>Characters</h2>
         </header>
-        <div className="charContainer">
+        <div className={styles.charContainer}>
           {charElems}
         </div>
       </section>

@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon as FAIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
-import { faStar as regStar } from '@fortawesome/free-regular-svg-icons';
+import { faStar as regStar } from '@fortawesome/free-regular-svg-icons';import {styles } from ""
+
+
 
 const CharacterCard = (props) => {
   const {

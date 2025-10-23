@@ -1,0 +1,119 @@
+/* reset default styles */
+
+// @import
+// @use
+// @import "variables";
+@use "variables";
+
+header {
+  font-family: "Oswald";
+
+  display: flex;
+
+  /* background-color: red; */
+  height: 100px;
+  justify-content: center;
+}
+
+/* .pageHeader{
+  height: 100px;
+} */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+/* character card container */
+.charCard {
+  border: 1px solid variables.$lightGrey;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.1);
+  // box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 0.2); /* margin: 5px; */
+  width: auto;
+  text-align: center;
+  font-size: 120%;
+  color: variables.$secondaryBlack;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+/* character card header */
+.charHeadContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  div {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 0;
+    color: variables.$primaryBlack;
+  }
+}
+
+.charName {
+  /* background-color: blue; */
+  margin-left: 20%;
+}
+.favIcon {
+  /* background-color: red;  */
+  margin-right: 10%;
+  display: flex;
+}
+
+/* character additional details - films */
+.charAddlDetail {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.charFilmsList {
+  margin-top: 0;
+}
+
+.charFilm {
+  margin-left: 0.5rem;
+}
+
+.charDetailsList {
+  font-family: "Cabin";
+}
+
+.charDetailsList li {
+  margin: 5px;
+}
+
+.charBtnOptions {
+  margin: 10px;
+  display: flex;
+  // align-items: center;
+  justify-content: space-evenly;
+
+  button {
+    border: 0.5px solid variables.$secondaryBlue;
+    border-radius: 1rem;
+    display: flex;
+  }
+}
+
+.primaryButton {
+  background-color: variables.$primaryBlue;
+}
+
+.secondaryButton {
+  color: variables.$primaryBlue;
+}
+
+// /* cards container */
+// .charContainer {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+//   gap: 20px;
+//   padding: 20px;
+// }
+// body {
+//   background-color: variables.$lightGrey;
+// }
